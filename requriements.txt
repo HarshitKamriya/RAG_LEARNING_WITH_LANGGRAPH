@@ -1,0 +1,6 @@
+langchain
+openai
+pydantic
+langchain-openai
+langchain-core
+langchain-community
