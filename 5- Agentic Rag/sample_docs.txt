@@ -1,0 +1,27 @@
+An agent loop is the cycle of thinking, acting, and observing. It allows an AI agent to continuously refine its actions based on results.
+This feedback loop is crucial in autonomous systems to adapt in real-time.
+Agent-based architectures benefit from memory, planning, and interaction with tools.
+
+Retrieval-Augmented Generation (RAG) combines retrieval systems with language models to provide accurate, context-aware responses.
+RAG systems fetch relevant documents and use them to ground the model's generation, reducing hallucinations.
+The architecture consists of a retriever component and a generative component working together seamlessly.
+
+ReAct (Reasoning + Acting) is a paradigm that enables agents to reason through problems while taking actions.
+It combines the strengths of chain-of-thought reasoning with action-taking capabilities in a single framework.
+ReAct agents interleave thinking steps with tool invocations to solve complex tasks systematically.
+
+LangGraph is a framework for building stateful, multi-actor applications with language models.
+It provides primitives for defining state, transitions, and conditional logic in agentic workflows.
+LangGraph enables developers to create complex agent orchestrations with human-in-the-loop capabilities.
+
+Tool integration allows agents to extend their capabilities beyond text generation.
+Tools can include APIs, databases, calculators, and search engines that agents invoke as needed.
+Effective tool design and management is critical for building reliable and powerful autonomous systems.
+
+Memory systems in agents enable learning from past interactions and maintaining context across conversations.
+Short-term memory handles immediate context, while long-term memory preserves important patterns and knowledge.
+Hybrid memory approaches combine multiple strategies to optimize agent performance and knowledge retention.
+
+State management in agentic systems tracks the current conditions and history of agent execution.
+Proper state design enables agents to make informed decisions and maintain consistency across multiple steps.
+State schemas define the structure and constraints for all information flowing through the agent system.
