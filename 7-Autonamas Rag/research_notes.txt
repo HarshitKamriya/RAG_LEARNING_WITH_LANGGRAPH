@@ -1,0 +1,160 @@
+Transformer in Artificial Intelligence
+1. Introduction to Transformer
+
+A Transformer is a deep learning architecture used mainly for processing sequential data such as text.
+It was introduced in the research paper “Attention Is All You Need” in 2017.
+Transformers are widely used in Natural Language Processing (NLP).
+Unlike RNNs and LSTMs, Transformers process many input tokens in parallel.
+This makes Transformers faster and more efficient for training large AI models.
+
+2. Why Transformers Were Introduced
+
+Earlier NLP systems mainly used RNNs and LSTMs.
+RNNs process words one after another, making training slow.
+They also have difficulty remembering information from very long sequences.
+LSTMs improved long-term memory but still use sequential processing.
+Transformers solve these problems using the Attention Mechanism.
+
+3. Basic Architecture of Transformer
+
+The original Transformer architecture consists of two major components.
+These components are the Encoder and the Decoder.
+The Encoder understands and represents the input sequence.
+The Decoder uses this representation to generate an output sequence.
+Both Encoder and Decoder contain multiple neural network layers.
+
+4. Input Embedding
+
+Computers cannot directly understand words or sentences.
+Therefore, words are first converted into numerical representations called embeddings.
+Each token is represented using a vector of numbers.
+Words with similar meanings can have similar vector representations.
+These embeddings become the initial input to the Transformer.
+
+5. Tokenization
+
+Before embeddings are created, the input text is divided into smaller units called tokens.
+This process is known as tokenization.
+A token may represent a word, part of a word, punctuation mark, or other text unit.
+For example, “Transformers are powerful” can be divided into multiple tokens.
+Tokenization allows models to efficiently process large vocabularies.
+
+6. Positional Encoding
+
+Transformers process tokens simultaneously instead of sequentially.
+Therefore, they need information about the position of each token.
+Positional Encoding adds information about token order to the embeddings.
+It helps the model distinguish between the first, second, and later words.
+Without positional information, word order would be difficult to understand.
+
+7. Attention Mechanism
+
+Attention is the most important concept behind Transformers.
+It allows the model to focus on important parts of the input sequence.
+Different words in a sentence may have different levels of importance.
+Attention calculates relationships between tokens in the sequence.
+This helps Transformers understand context more effectively.
+
+8. Self-Attention
+
+Self-Attention calculates relationships between tokens within the same sequence.
+Each token can examine other tokens to understand its meaning.
+For example, in “The cat drank milk because it was hungry,” the model can relate “it” to “cat.”
+This helps the Transformer understand dependencies between distant words.
+Self-Attention is used extensively inside Transformer layers.
+
+9. Query, Key, and Value
+
+Self-Attention uses three important vectors: Query, Key, and Value.
+The Query represents what a token is looking for.
+The Key represents information used to determine the relevance of another token.
+The Value contains the actual information associated with that token.
+Queries and Keys are compared to calculate attention scores.
+
+10. Scaled Dot-Product Attention
+
+The Transformer commonly uses Scaled Dot-Product Attention.
+First, the Query vector is multiplied by the Key vector.
+The result is divided by the square root of the Key dimension.
+A Softmax function converts the resulting scores into attention weights.
+These weights are then multiplied by the Value vectors.
+
+11. Multi-Head Attention
+
+Transformers use multiple attention operations simultaneously.
+This technique is known as Multi-Head Attention.
+Each attention head can learn different relationships between tokens.
+One head might learn grammatical relationships while another captures semantic meaning.
+The outputs of all attention heads are combined together.
+
+12. Transformer Encoder
+
+The Encoder processes the input sequence and creates contextual representations.
+An Encoder contains Multi-Head Self-Attention layers.
+It also contains a Feed-Forward Neural Network.
+Residual connections and normalization are applied around these components.
+Several Encoder blocks can be stacked to build a deeper model.
+
+13. Transformer Decoder
+
+The Decoder generates the output sequence.
+It contains Masked Multi-Head Self-Attention.
+It can also attend to information produced by the Encoder.
+The decoder predicts output tokens based on previous tokens and contextual information.
+This architecture is useful for tasks such as machine translation.
+
+14. Masked Self-Attention
+
+The Decoder uses Masked Self-Attention during text generation.
+The mask prevents the model from looking at future tokens.
+A token can only attend to itself and previously generated tokens.
+This ensures that generation happens in the correct sequence.
+It is particularly important for autoregressive language models.
+
+15. Feed-Forward Neural Network
+
+Each Transformer block contains a Feed-Forward Neural Network (FFN).
+The FFN processes each token representation independently.
+It usually contains two linear transformations with an activation function.
+This helps the model learn more complex representations.
+The FFN works together with the Attention layers.
+
+16. Residual Connections
+
+Transformers use Residual Connections around important sublayers.
+A residual connection adds the original input to the output of a layer.
+This helps information flow through deep neural networks.
+It also reduces problems related to vanishing gradients.
+Residual connections make training deep Transformer models easier.
+
+17. Layer Normalization
+
+Layer Normalization is another important Transformer component.
+It normalizes the values produced by neural network layers.
+This helps maintain stable activations during training.
+It can improve convergence and training stability.
+Normalization is used repeatedly throughout Transformer architectures.
+
+18. Advantages of Transformers
+
+Transformers can process tokens in parallel during training.
+They can effectively capture long-range dependencies in text.
+They scale well when trained with large datasets and computational resources.
+Transformers can be adapted to many different AI tasks.
+They are the foundation of many modern generative AI systems.
+
+19. Applications of Transformers
+
+Transformers are widely used for machine translation.
+They are also used for text summarization and question answering.
+They can perform sentiment analysis, classification, and information extraction.
+Modern Transformers can also process images, audio, video, and multimodal information.
+They are therefore useful beyond traditional NLP applications.
+
+20. Popular Transformer Models
+
+BERT is primarily based on the Transformer Encoder architecture.
+GPT models primarily use a decoder-style Transformer architecture for language generation.
+T5 treats many NLP problems as text-to-text tasks.
+Vision Transformers apply Transformer concepts to image-processing tasks.
+Overall, Transformers have become one of the most important architectures in modern Artificial Intelligence.
